@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Chris L Henrick">
+
+    <title>NYC Crash Mapper — NACIS 2017</title>
+
+    <link rel="stylesheet" href="../lib/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="../lib/revealjs/css/theme/white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../lib/revealjs/lib/css/zenburn.css">
+
+    <style>
+      body {
+        background-color: #fffad5;
+        color: #105b63;
+      }
+
+      img {
+        border: 0 !important;
+      }
+
+      .reveal h1,
+      .reveal h2,
+      .reveal h3,
+      .reveal h4,
+      .reveal h5,
+      .reveal h6,
+      .reveal p,
+      .reveal li,
+      .reveal a,
+      .reveal span {
+        color: #105b63;
+      }
+
+      .reveal a {
+        text-decoration: underline;
+      }
+
+      .reveal a:hover {
+        /* d3.color('#105b63').brighter(2).toString(); */
+        color: rgb(33, 186, 202);
+      }
+
+      .reveal li {
+        text-transform: capitalize;
+      }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/revealjs/css/print/pdf.css' : '../lib/revealjs/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-markdown>
+          <textarea data-template>
+            # _NYC Crash Mapper_
+            ### Chris Henrick
+            ### NACIS 2017
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            <img src="img/GreenInfo_logo.png" />
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            <img width="75%" height="75%" src="img/greeninfo_work.png" />
+          </textarea>
+        </section>
+
+        <section style="text-align:left">
+          <h2>Open Data <br /> <span class="fragment fade-up">is open,</span> <br /><span class="fragment fade-up">but not always...</span></h2>
+          <div style="text-align:right">
+            <h3 class="fragment fade-up">Usable</h3>
+            <h3 class="fragment fade-up">Of Good Quality</h3>
+            <h3 class="fragment fade-up">Easy to Download</h3>
+          </div>
+        </section>
+
+        <section style="text-align:left;">
+          <h2>Dog Fooding</h2>
+          <div>
+            <p class="fragment fade-up">"Eating your own dog food" makes for better open data</p>
+            <p class="fragment fade-up">Many open data portals aren't used by gov...</p>
+            <p class="fragment fade-up">Leaving little incentive for data QA & improvement</p>
+          </div>
+        </section>
+
+        <section style="text-align:right;" data-markdown>
+          <textarea data-template>
+            ## ~14% of all crashes are not geocoded
+            ### Thanks, NYPD <!-- .element: class="fragment fade-up" -->
+          </textarea>
+        </section>
+
+        <section style="text-align:left;" data-markdown>
+          <textarea data-template>
+            ## 35% of all crashes are missing valuable info
+            <h3 style="text-align:right" class="fragment fade-up">On Street Name</h3>
+            <h3 style="text-align:right" class="fragment fade-up">Cross Street Name</h3>
+            <h3 style="text-align:right" class="fragment fade-up">Borough Name</h3>
+            <h3 style="text-align:right" class="fragment fade-up">Contributing Factors</h3>
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## "One Size Fits All"
+            <span class="fragment fade-up">Open data platforms ~~don't~~ can't work well <br /> for every type of data and use case.</span>
+          </textarea>
+        </section>
+
+        <section style="text-align:left" data-markdown>
+          <textarea data-template>
+            # NYC Crash Mapper
+            <p class="fragment fade-up">**1 million+** Rows of data</p>
+            <p>
+              <span class="fragment fade-up">**Goal:**</span>
+              <span class="fragment fade-up">Make vehicle collision data _more accessible_</span>
+            </p>
+            <p>
+              <span class="fragment fade-up">**Primary Audience:** </span>
+              <span class="fragment fade-up">Transportation safety advocates in NYC</span>
+            </p>
+            <p>
+              <span class="fragment fade-up">**Intended Use:** </span>
+              <span class="fragment fade-up">Persuade elected officials to improve traffic safety</span>
+            </p>
+            <p>
+              <span class="fragment fade-up">**Funded by:** </span>
+              <span class="fragment fade-up"><a target="_blank" href="http://chekpeds.com/">Chekpeds</a>, a non-profit in Hell's Kitchen, Manhattan</span>
+            </p>
+            <p>
+              <span class="fragment fade-up">**Grant from:**</span>
+              <span class="fragment fade-up"><a target="_blank" href="https://carto.com">CARTO</a></span>
+            </p>
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            # Features
+          </textarea>
+        </section>
+
+        <!-- screenshots of web app features here -->
+        <section data-background-image="img/nyc-crash-mapper01.jpg" data-markdown></section>
+
+        <section data-background-image="img/nyc-crash-mapper03.jpg"></section>
+
+        <section data-background-image="img/nyc-crash-mapper05.jpg"></section>
+
+        <section data-background-image="img/nyc-crash-mapper06.jpg"></section>
+
+        <section data-background-image="img/nyc-crash-mapper07.jpg"></section>
+
+        <section data-background-image="img/nyc-crash-mapper08.jpg"></section>
+
+        <section data-background-image="img/nyc-crash-mapper09.jpg"></section>
+
+        <section data-background-image="img/nyc-crash-mapper10.jpg"></section>
+
+        <section data-background-image="img/nyc-crash-mapper11.jpg"></section>
+
+        <section data-background-image="img/nyc-crash-mapper12.jpg"></section>
+
+        <section data-markdown>
+          <textarea data-template>
+            # Upcoming improvements & Features
+          </textarea>
+        </section>
+
+        <!-- screenshots of in-progress work here -->
+        <section>
+          <img src="img/hexbin_map.png" />
+        </section>
+
+        <section>
+          <img src="img/council-vs-citywide.png" />
+        </section>
+
+        <section>
+          <img style="width: 75%; height: 75%;" src="img/dot-grid-chart.png" />
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            # Thank You
+            __[http://clhenrick.io](http://clhenrick.io)__ <br />
+            __@chrislhenrick__ <br />
+            __chrishenrick@gmail.com__
+          </textarea>
+        </section>
+
+
+        <!-- <section data-markdown>
+          <textarea data-template>
+            this is an extra template slide
+          </textarea>
+        </section> -->
+
+      </div>
+    </div>
+
+    <script src="../../lib/revealjs/lib/js/head.min.js"></script>
+    <script src="../../lib/revealjs/js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: false,
+        progress: false,
+        width: 1280,
+        height: 800,
+        history: true,
+        slideNumber: true,
+        transition: 'convex',
+        autoPlayMedia: true,
+        dependencies: [
+          { src: '../lib/revealjs/plugin/markdown/marked.js' },
+          { src: '../lib/revealjs/plugin/markdown/markdown.js' },
+          { src: '../lib/revealjs/plugin/notes/notes.js', async: true },
+          { src: '../lib/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
