@@ -7,11 +7,11 @@
 
     <title>NYC Crash Mapper — NACIS 2017</title>
 
-    <link rel="stylesheet" href="../lib/revealjs/css/reveal.css">
-    <link rel="stylesheet" href="../lib/revealjs/css/theme/white.css">
+    <link rel="stylesheet" href="./lib/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="./lib/revealjs/css/theme/white.css">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="../lib/revealjs/lib/css/zenburn.css">
+    <link rel="stylesheet" href="./lib/revealjs/lib/css/zenburn.css">
 
     <style>
       body {
@@ -55,7 +55,7 @@
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/revealjs/css/print/pdf.css' : '../lib/revealjs/css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? './lib/revealjs/css/print/pdf.css' : './lib/revealjs/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
   </head>
@@ -217,8 +217,8 @@
       </div>
     </div>
 
-    <script src="../../lib/revealjs/lib/js/head.min.js"></script>
-    <script src="../../lib/revealjs/js/reveal.js"></script>
+    <script src="./lib/revealjs/lib/js/head.min.js"></script>
+    <script src="./lib/revealjs/js/reveal.js"></script>
 
     <script>
       // More info about config & dependencies:
@@ -234,10 +234,10 @@
         transition: 'convex',
         autoPlayMedia: true,
         dependencies: [
-          { src: '../lib/revealjs/plugin/markdown/marked.js' },
-          { src: '../lib/revealjs/plugin/markdown/markdown.js' },
-          { src: '../lib/revealjs/plugin/notes/notes.js', async: true },
-          { src: '../lib/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: './lib/revealjs/plugin/markdown/marked.js' },
+          { src: './lib/revealjs/plugin/markdown/markdown.js' },
+          { src: './lib/revealjs/plugin/notes/notes.js', async: true },
+          { src: './lib/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
     </script>
